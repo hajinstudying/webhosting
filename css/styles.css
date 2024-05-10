@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/* 외장화된 스타일 시트(외부 스타일시트) */
+
+h1{
+    color: blueviolet;
+    /* 폰트를 여러개 지정 가능. 폰트, 대안폰트. 둘다 없으면 윈도우 기본폰트 나옴 */
+    font-family: Verdana, sans-serif; 
+    /* 글자크기. 일반적인 웹브라우저의 기준 폰트 사이즈인 16px의 300% = 48px*/
+    /* 사용 기기마다 적절한 폰트로 나오도록 퍼센트로 지정 */
+    font-size: 300%; 
+}
+p{
+    color: red;
+    font-family: courier;
+    font : 150;
+    border: 2px solid powderblue; /* border: 크기 점선/실선 색상*/
+}
+
+/* 온라인 프로필 스타일시트 */
+section{
+    width:500px; /*너비*/
+    padding: 15px; /*컨텐트와 보더 사이 여백*/
+    border: 5px solid rgb(38, 186, 197);
+}
+
+/* > : 자식선택자 -section 자식 중에서 p태그인 요소들만 적용*/
+section > p { 
+    color: blue;
+}
+section > h1 {
+    color: rgb(122, 41, 197);
+}
